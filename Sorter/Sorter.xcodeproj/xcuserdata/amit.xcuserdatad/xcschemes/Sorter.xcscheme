@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "287071E520F7903900AB5495"
-               BuildableName = "SearchMovieAPI.framework"
-               BlueprintName = "SearchMovieAPI"
-               ReferencedContainer = "container:SearchMovieAPI.xcodeproj">
+               BlueprintIdentifier = "28726B0020FD05150098F2E3"
+               BuildableName = "libSorter.a"
+               BlueprintName = "Sorter"
+               ReferencedContainer = "container:Sorter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "287071E520F7903900AB5495"
-            BuildableName = "SearchMovieAPI.framework"
-            BlueprintName = "SearchMovieAPI"
-            ReferencedContainer = "container:SearchMovieAPI.xcodeproj">
+            BlueprintIdentifier = "28726B0020FD05150098F2E3"
+            BuildableName = "libSorter.a"
+            BlueprintName = "Sorter"
+            ReferencedContainer = "container:Sorter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,10 +67,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "287071E520F7903900AB5495"
-            BuildableName = "SearchMovieAPI.framework"
-            BlueprintName = "SearchMovieAPI"
-            ReferencedContainer = "container:SearchMovieAPI.xcodeproj">
+            BlueprintIdentifier = "28726B0020FD05150098F2E3"
+            BuildableName = "libSorter.a"
+            BlueprintName = "Sorter"
+            ReferencedContainer = "container:Sorter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

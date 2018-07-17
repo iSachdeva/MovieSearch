@@ -14,6 +14,9 @@
 		287071EB20F7903900AB5495 /* SearchMovieAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 287071E920F7903900AB5495 /* SearchMovieAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		287071F320F790E300AB5495 /* SearchMovie.h in Headers */ = {isa = PBXBuildFile; fileRef = 287071F120F790E300AB5495 /* SearchMovie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2870721C20F7978D00AB5495 /* SearchMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 287071F220F790E300AB5495 /* SearchMovie.m */; };
+		28726B1420FD06AD0098F2E3 /* libSorter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28726B1320FD06AD0098F2E3 /* libSorter.a */; };
+		28726B1F20FD12250098F2E3 /* Sorter.h in Headers */ = {isa = PBXBuildFile; fileRef = 28726B1D20FD12250098F2E3 /* Sorter.h */; };
+		28726B2020FD12250098F2E3 /* MovieStruct.h in Headers */ = {isa = PBXBuildFile; fileRef = 28726B1E20FD12250098F2E3 /* MovieStruct.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		287071EA20F7903900AB5495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		287071F120F790E300AB5495 /* SearchMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMovie.h; sourceTree = "<group>"; };
 		287071F220F790E300AB5495 /* SearchMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMovie.m; sourceTree = "<group>"; };
+		28726B1320FD06AD0098F2E3 /* libSorter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSorter.a; sourceTree = "<group>"; };
+		28726B1D20FD12250098F2E3 /* Sorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sorter.h; path = include/Sorter/Sorter.h; sourceTree = "<group>"; };
+		28726B1E20FD12250098F2E3 /* MovieStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieStruct.h; path = include/Sorter/MovieStruct.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28726B1420FD06AD0098F2E3 /* libSorter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,9 +72,20 @@
 				283CB19520F8634C000E0F4D /* Encrypt.m */,
 				283CB19620F8634C000E0F4D /* SecureManager.h */,
 				283CB19720F8634C000E0F4D /* SecureManager.m */,
+				28726B1220FD06940098F2E3 /* Sorter */,
 				287071EA20F7903900AB5495 /* Info.plist */,
 			);
 			path = SearchMovieAPI;
+			sourceTree = "<group>";
+		};
+		28726B1220FD06940098F2E3 /* Sorter */ = {
+			isa = PBXGroup;
+			children = (
+				28726B1E20FD12250098F2E3 /* MovieStruct.h */,
+				28726B1D20FD12250098F2E3 /* Sorter.h */,
+				28726B1320FD06AD0098F2E3 /* libSorter.a */,
+			);
+			name = Sorter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +99,8 @@
 				287071EB20F7903900AB5495 /* SearchMovieAPI.h in Headers */,
 				287071F320F790E300AB5495 /* SearchMovie.h in Headers */,
 				283CB19A20F8634C000E0F4D /* SecureManager.h in Headers */,
+				28726B2020FD12250098F2E3 /* MovieStruct.h in Headers */,
+				28726B1F20FD12250098F2E3 /* Sorter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +314,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SearchMovieAPI",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.idevamit.SearchMovieAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -319,6 +343,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SearchMovieAPI",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.idevamit.SearchMovieAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

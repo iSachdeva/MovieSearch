@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		2870720B20F796AD00AB5495 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2870720320F796AC00AB5495 /* AppDelegate.m */; };
 		2870720D20F796AD00AB5495 /* UIImageView+DataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2870720620F796AC00AB5495 /* UIImageView+DataTask.m */; };
-		2870722F20F79B5D00AB5495 /* SearchMovieAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2870722E20F79B5D00AB5495 /* SearchMovieAPI.framework */; };
-		2870723020F79B5D00AB5495 /* SearchMovieAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2870722E20F79B5D00AB5495 /* SearchMovieAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2870723620F79C8200AB5495 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2870723520F79C8200AB5495 /* MovieCollectionViewCell.m */; };
 		2870723B20F79C8C00AB5495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2870723720F79C8C00AB5495 /* LaunchScreen.storyboard */; };
 		2870723C20F79C8C00AB5495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2870723920F79C8C00AB5495 /* Main.storyboard */; };
 		2870724720F79D4100AB5495 /* SearchMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2870724620F79D4100AB5495 /* SearchMovieViewController.m */; };
+		28726AF620FCFDCA0098F2E3 /* SearchMovieAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28726AF520FCFDCA0098F2E3 /* SearchMovieAPI.framework */; };
+		28726AF720FCFDCA0098F2E3 /* SearchMovieAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28726AF520FCFDCA0098F2E3 /* SearchMovieAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28935FBE20F1DB3B00C2B2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28935FBD20F1DB3B00C2B2DA /* Assets.xcassets */; };
 		28935FC420F1DB3B00C2B2DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28935FC320F1DB3B00C2B2DA /* main.m */; };
 /* End PBXBuildFile section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2870723020F79B5D00AB5495 /* SearchMovieAPI.framework in Embed Frameworks */,
+				28726AF720FCFDCA0098F2E3 /* SearchMovieAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,13 +38,13 @@
 		2870720320F796AC00AB5495 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2870720620F796AC00AB5495 /* UIImageView+DataTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DataTask.m"; sourceTree = "<group>"; };
 		2870720A20F796AD00AB5495 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2870722E20F79B5D00AB5495 /* SearchMovieAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SearchMovieAPI.framework; sourceTree = "<group>"; };
 		2870723420F79C8200AB5495 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		2870723520F79C8200AB5495 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
 		2870723820F79C8C00AB5495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2870723A20F79C8C00AB5495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2870724520F79D4100AB5495 /* SearchMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMovieViewController.h; sourceTree = "<group>"; };
 		2870724620F79D4100AB5495 /* SearchMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMovieViewController.m; sourceTree = "<group>"; };
+		28726AF520FCFDCA0098F2E3 /* SearchMovieAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SearchMovieAPI.framework; path = MovieSearch/SearchMovieAPI.framework; sourceTree = "<group>"; };
 		28935FB120F1DB3A00C2B2DA /* MovieSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28935FBD20F1DB3B00C2B2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28935FC220F1DB3B00C2B2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2870722F20F79B5D00AB5495 /* SearchMovieAPI.framework in Frameworks */,
+				28726AF620FCFDCA0098F2E3 /* SearchMovieAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +112,7 @@
 		28935FA820F1DB3A00C2B2DA = {
 			isa = PBXGroup;
 			children = (
-				2870722E20F79B5D00AB5495 /* SearchMovieAPI.framework */,
+				28726AF520FCFDCA0098F2E3 /* SearchMovieAPI.framework */,
 				28935FB320F1DB3A00C2B2DA /* MovieSearch */,
 				28935FB220F1DB3A00C2B2DA /* Products */,
 			);
