@@ -56,14 +56,18 @@ NSString* apiKey = nil;
                                                         NSHTTPURLResponse * httpResponse = (NSHTTPURLResponse*)response;
                                                         if(httpResponse.statusCode == 200) {
                                                             NSMutableDictionary* responseDict= [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
+                                                            BOOL isSuccess = error ? NO : YES;
                                                             NSMutableDictionary *mutableResponse = [NSMutableDictionary new];
-                                                            [mutableResponse setDictionary:responseDict];
-                                                            NSArray* sorted = [[NSArray alloc]initWithArray:[weakSelf sortMovies:responseDict]];
-                                                            [mutableResponse setObject:sorted forKey:@"results"];
-                                                            dispatch_async(dispatch_get_main_queue(), ^{
-                                                                BOOL isSuccess = error ? NO : YES;
+                                                            if(isSuccess) {
+                                                                [mutableResponse setDictionary:responseDict];
+                                                                NSArray* sorted = [[NSArray alloc]initWithArray:[weakSelf sortMovies:responseDict]];
+                                                                [mutableResponse setObject:sorted forKey:@"results"];
+                                                                dispatch_async(dispatch_get_main_queue(), ^{
+                                                                    completionHandler(isSuccess,error,mutableResponse);
+                                                                });
+                                                            } else {
                                                                 completionHandler(isSuccess,error,mutableResponse);
-                                                            });
+                                                            }
                                                         } else {
                                                             // populate the error object with the details
                                                             NSError* error = [NSError errorWithDomain:@"custom" code:111 userInfo:@{NSLocalizedDescriptionKey:@"Oops Something went wrong. Please check your API key"}];

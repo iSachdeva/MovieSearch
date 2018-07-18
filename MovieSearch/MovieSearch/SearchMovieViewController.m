@@ -138,7 +138,7 @@
     
     MovieCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MovieCollectionView_ID" forIndexPath:indexPath];
     NSString* title = [self.moviesList[indexPath.row] objectForKey:@"title"];
-    NSString* imagePath = [self.moviesList[indexPath.row] objectForKey:@"backdrop_path"];
+    NSString* imagePath = [self.moviesList[indexPath.row] objectForKey:@"posterImageUrl"];
     [cell.name setText:title];
     NSString* imageURL = [NSString  stringWithFormat:@"%@w500%@",@"https://image.tmdb.org/t/p/",imagePath];
     [cell.posterView setImageWithURL:imageURL];

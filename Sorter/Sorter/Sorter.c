@@ -25,12 +25,15 @@ struct MovieStruct* SortElements(struct MovieStruct *array, int size)
 
 struct MovieStruct* MovieStructInit(const char* title,int titleLength,int rating, const char* imageUrl,int imageUrlLength) {
     struct MovieStruct *newStruct = malloc(sizeof(struct MovieStruct));
-    newStruct->title = (char *) malloc(titleLength * sizeof(char));
-    newStruct->imageUrl = (char *) malloc(imageUrlLength * sizeof(char));
-    strcpy(newStruct->title, title);
-    newStruct->rating = rating;
-    strcpy(newStruct->imageUrl, imageUrl);
-
+    if (newStruct) {
+        char *titleBuffer = malloc(strlen(title) + 1);
+        char *imageBuffer = malloc(strlen(imageUrl) + 1);
+        
+        newStruct->title = titleBuffer ? strcpy(titleBuffer, title) : titleBuffer;
+        newStruct->imageUrl = imageBuffer ? strcpy(imageBuffer, imageUrl) : imageBuffer;
+        
+        newStruct->rating = rating;
+    }
     return newStruct;
 }
 
